@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSIntro</title>
+</head>
+<body>
+
+    <label for "JSIntro"> What language was created to add interactivity to the Web? :<input class="codebase" type="text"></label>
+    <script>
+       
+       alert(document.querySelector('.codebase'));
+       
+       var IntroBase = document.querySelector('.codebase');
+
+       IntroBase.addEventListener('focusout',
+        (event) => { alert(IntroBase.value)})
+
+       let userResponse = prompt("What code library do you prefer? Vue, React or jQuery?")
+       
+       alert(userResponse);
+    </script>
+</body>
+</html>
